@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords"
+          content="масаж Тернопіль, Масаж, Тернопіль, Масаж тіла, Тернопіль масаж, масаж Тернопіль ціни, масаж Тернопіль ціна">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+          integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <!-- links media quires -->
+    <link rel="stylesheet" href="../static/css/media.css" th:href="@{/css/media.css}">
+    <title>Power Massage</title>
+</head>
+<body>
+<header>
+    <nav>
+        <div id="sticky" class="container">
+            <h1 class="logo"><a href="/" onclick="slowScroll('#about-info')">Power Massage</a></h1>
+            <ul>
+                <li><a href="/" onclick="slowScroll('#home-info')">Масажі</a></li>
+                <li><a href="/" onclick="slowScroll('#slider-photo')">Галарея</a></li>
+                <li><a href="/" onclick="slowScroll('#contact-info')">Контакти</a></li>
+                <li><a href="/" onclick="slowScroll('#testimonials')">Відгуки</a></li>
+            </ul>
+            <div class="menu-mobile">
+                <img id="btn" th:src="@{/img/icons8-меню-30.png}" alt="">
+            </div>
+        </div>
+    </nav>
+</header><div class="container">
+    <br><h1 class="l-heading"> Залиште відгук</h1>
+    <form action="/add" method="post">
+        <div class="row">
+            <div class="col-25">
+                <label for="fname">Ваше ім'я</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="fname" name="name" placeholder="Ваше ім'я..."><br>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+                <label for="subject">Відгук</label>
+            </div>
+            <div class="col-75">
+                <textarea id="subject" name="respond" placeholder="Напишіть свій відгук" style="height:200px"></textarea><br><br>
+            </div>
+        </div>
+        <div class="row">
+            <input type="submit" value="Submit"><br>
+        </div>
+    </form>
+
+</div>
+
+<footer class="footer-1">
+    <div>
+        <a target="_blank" href="https://www.facebook.com/taras.symchuk" class="fa fa-facebook-square"></a>
+        <a target="_blank" href="https://www.instagram.com/powermassagetherapy/" class="fa fa-instagram"></a>
+        <a target="_blank" href="https://t.me/taras_symchuk" class="fa fa-telegram"></a>
+    </div>
+    <div>
+        <p>Power Massage &copy; 2022</p>
+    </div>
+</footer>
+</body>
+</html>
